@@ -25,4 +25,4 @@ class Locators:
     FILLINGS_TAB = (By.XPATH, '//span[contains(text(),"Начинки")]')  #Вкладка начинки в конструкторе
     BUNS_TAB = (By.XPATH, '//span[contains(text(),"Булки")]')  #Вкладка булки в конструкторе
 
-    ACTIVE_TAB = (By.XPATH,'//div[@class = "tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect"]')  #Локатор активной вкладки в конструкторе
+    ACTIVE_TAB = (By.XPATH,'//div[contains(@class, "tab_tab__") and contains(@class, "tab_tab_type_current__")]')  #Локатор активной вкладки в конструкторе
