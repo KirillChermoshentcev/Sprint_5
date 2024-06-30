@@ -17,12 +17,12 @@ class TestStellarBurgers:
         auth_button.click()
 
         email_field = WebDriverWait(driver, timeout).until(
-            EC.element_to_be_clickable(Locators.EMAIL))
+            EC.element_to_be_clickable(Locators.EMAIL_FIELD))
         email_field.click()
         email_field.send_keys(email)
 
         password_field = WebDriverWait(driver, timeout).until(
-            EC.element_to_be_clickable(Locators.PASSWORD))
+            EC.element_to_be_clickable(Locators.PASSWORD_FIELD))
         password_field.click()
         password_field.send_keys(password)
 

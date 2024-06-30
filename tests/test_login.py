@@ -17,12 +17,12 @@ class TestStellarBurgers:
         auth_button.click()
 
         email_field = WebDriverWait(driver, timeout).until(
-            EC.element_to_be_clickable(Locators.EMAIL))
+            EC.element_to_be_clickable(Locators.EMAIL_FIELD))
         email_field.click()
         email_field.send_keys(email)
 
         password_field = WebDriverWait(driver, timeout).until(
-            EC.element_to_be_clickable(Locators.PASSWORD))
+            EC.element_to_be_clickable(Locators.PASSWORD_FIELD))
         password_field.click()
         password_field.send_keys(password)
 
@@ -43,12 +43,12 @@ class TestStellarBurgers:
         personal_account_btn.click()
 
         email_field = WebDriverWait(driver, timeout).until(
-            EC.element_to_be_clickable(Locators.EMAIL))
+            EC.element_to_be_clickable(Locators.EMAIL_FIELD))
         email_field.click()
         email_field.send_keys(email)
 
         password_field = WebDriverWait(driver, timeout).until(
-            EC.element_to_be_clickable(Locators.PASSWORD))
+            EC.element_to_be_clickable(Locators.PASSWORD_FIELD))
         password_field.click()
         password_field.send_keys(password)
 
@@ -77,12 +77,12 @@ class TestStellarBurgers:
         enter.click()
 
         email_field = WebDriverWait(driver, timeout).until(
-            EC.element_to_be_clickable(Locators.EMAIL))
+            EC.element_to_be_clickable(Locators.EMAIL_FIELD))
         email_field.click()
         email_field.send_keys(email)
 
         password_field = WebDriverWait(driver, timeout).until(
-            EC.element_to_be_clickable(Locators.PASSWORD))
+            EC.element_to_be_clickable(Locators.PASSWORD_FIELD))
         password_field.click()
         password_field.send_keys(password)
 
@@ -110,12 +110,12 @@ class TestStellarBurgers:
         driver.find_element(*Locators.ENTER_LINK).click()
 
         email_field = WebDriverWait(driver, timeout).until(
-            EC.element_to_be_clickable(Locators.EMAIL))
+            EC.element_to_be_clickable(Locators.EMAIL_FIELD))
         email_field.click()
         email_field.send_keys(email)
 
         password_field = WebDriverWait(driver, timeout).until(
-            EC.element_to_be_clickable(Locators.PASSWORD))
+            EC.element_to_be_clickable(Locators.PASSWORD_FIELD))
         password_field.click()
         password_field.send_keys(password)
 

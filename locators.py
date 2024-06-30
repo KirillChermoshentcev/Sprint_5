@@ -3,8 +3,11 @@ from selenium.webdriver.common.by import By
 
 class Locators:
 
-    EMAIL = (By.XPATH, '//label[contains(text(),"Email")]/following-sibling::input')  #Поле для ввода Email
-    PASSWORD = (By.XPATH, '//label[contains(text(),"Пароль")]/following-sibling::input')  #Поле для ввода пароля
+    NAME_FIELD = (By.XPATH, '//label[contains(text(),"Имя")]/following-sibling::input')  #Поля для ввода Имени
+    EMAIL_FIELD = (By.XPATH, '//label[contains(text(),"Email")]/following-sibling::input')  #Поле для ввода Email
+    PASSWORD_FIELD = (By.XPATH, '//label[contains(text(),"Пароль")]/following-sibling::input')  #Поле для ввода пароля
+    INCORRECT_PASSWORD = (By.XPATH, '//p[contains(text(),"Некорректный пароль")]')  #Текст, что пароль некорректный
+    INCORRECT_EMAIL = (By.XPATH, '//p[contains(text(),"Такой пользователь уже существует")]')  #Некорректный email
     AUTH_BUTTON_ACC = (By.XPATH, '//button[contains(text(),"Войти в аккаунт")]')  #Кнопка Войти в аккаунт на главной странице при незалогине
     AUTH_BUTTON_ENTER = (By.XPATH, '//button[contains(text(),"Войти")]')  #Кнопка Войти под полями логина
     ENTER_LINK = (By.XPATH, '//p/a[@href="/login"]')  #Ссылка Войти под формой регистрации
